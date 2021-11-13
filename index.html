@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/styles/reset.css" />
+    <link rel="stylesheet" href="public/styles/style.css" />
+    <title>David Ortiz</title>
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="logo">Logo</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Github</a></li>
+        <li><a href = "#">Portfolio</a></li>
+        <li id = "contact-btn"><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="./public/images/Studio_background.PNG" id="studio">
+      <img src="./public/images/David.PNG" id="david">
+      <h2 id="text">David Ortiz. Web Developer.Dad</h2>
+      <img src="./public/images/Microphone.PNG" id="microphone">
+      <div class="content">
+    </section>
+    <div class="sec" id="sec">
+      <h2>David Ortiz</h2>
+      <p>A bunch of stuff about David Ortiz that no one probably cares to know but here it anyway for people to read.</p>
+    </div class="sec">
+    <script type="text/javascript">
+      let studio = document.getElementById('studio');
+      let davidEl = document.getElementById('david');
+      let microphoneEl = document.getElementById('microphone');
+      let text = document.getElementById('text');
+      let header = document.querySelector('header');
+      window.addEventListener('scroll', function() {
+        var value = window.scrollY;
+        studio.style.right = value * 0.25 + 'px';
+        davidEl.style.left =-value * -0.3 + 'px';
+        header.style.top =-value * -0.7 + 'px';
+        microphoneEl.style.left = -value * .1 + 'px';
+        text.style.marginTop = value * .6 + 'px';
+        text.style.marginRight = value * 2 + 'px';
+        studio.style.height = 90+(value*.2) + "%";
+      });
+    </script>
+    <div class="contact-modal-bg" id="contact-modal-bg">
+      <div class="contact-modal" id="contact-modal">
+        <p id="close-modal">X</p>
+        <div class="form-group">
+          <label for="name"> Name:</label>
+          <input
+            class="contact-input"
+            id="name"
+            placeholder="Enter Your Name Here"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input
+            class="contact-input"
+            id="email"
+            placeholder="Enter Your Email Here"
+            name="email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="subject"> Subject:</label>
+          <input
+            class="contact-input"
+            id="subject"
+            placeholder="Enter Subject Heading"
+            name="subject"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            class="contact-message"
+            id="contact-area"
+            placeholder="Enter Your Message Here"
+            name="message"
+          ></textarea>
+        </div>
+        <div class="submit-button" id="send-message-button">Send Message</div>
+      </div>
+    </div>
+  <script src="public/js/index.js"></script>
+  </body>
+</html>
