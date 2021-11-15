@@ -6,26 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="public/styles/reset.css" />
     <link rel="stylesheet" href="public/styles/style.css" />
-    <title>David Ortiz</title>
+    <title>David Ortiz. Web Developer</title>
   </head>
   <body>
-
+    <div class="contact-modal-bg" id="contact-modal-bg">
+      <div class="contact-modal" id="contact-modal">
+        <p id="close-modal">X</p>
+        <div class="form-group">
+          <label for="name"> Name:</label>
+          <input
+            class="contact-input"
+            id="name"
+            placeholder="Enter Your Name Here"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input
+            class="contact-input"
+            id="email"
+            placeholder="Enter Your Email Here"
+            name="email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="subject"> Subject:</label>
+          <input
+            class="contact-input"
+            id="subject"
+            placeholder="Enter Subject Heading"
+            name="subject"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            class="contact-message"
+            id="contact-area"
+            placeholder="Enter Your Message Here"
+            name="message"
+          ></textarea>
+        </div>
+        <div class="submit-button" id="send-message-button">Send Message</div>
+      </div>
+    </div>
     <header>
       <a href="#" class="logo"><img id = "comal" src = "public/images/Logo.png"></a>
       <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Github</a></li>
-        <li><a href = "#">Portfolio</a></li>
-        <li id = "contact-btn"><a href="#">Contact</a></li>
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#">GITHUB</a></li>
+        <li><a href = "#">PORTFOLIO</a></li>
+        <li id = "contact-btn"><a href="#">CONTACT</a></li>
       </ul>
     </header>
     <section>
-      <img src="./public/images/Studio_background.PNG" id="studio">
-      <img src="./public/images/David.PNG" id="david">
+      <img class = "parallax" src="./public/images/Studio_background.PNG" id="studio">
+      <img class = "parallax" src="./public/images/David.PNG" id="david">
       <h2 id="text">David Ortiz. Web Developer.Dad</h2>
-      <img src="./public/images/Microphone.PNG" id="microphone">
-      <div class="content">
+      <img class = "parallax" src="./public/images/Microphone.PNG" id="microphone">
+
     </section>
+    <div class="content">
     <div class="sec" id="sec">
       <h2>David Ortiz</h2>
       <p>A bunch of stuff about David Ortiz that no one probably cares to know but here it anyway for people to read.</p>
@@ -88,6 +129,6 @@
         <div class="submit-button" id="send-message-button">Send Message</div>
       </div>
     </div>
-  <script src="public/js/index.js"></script>
+  <script src="./public/js/index.js"></script>
   </body>
 </html>
