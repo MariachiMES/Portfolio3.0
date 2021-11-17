@@ -2,13 +2,29 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   box-sizing: border-box;
 }
+#UAC {
+}
+#UAC::before {
+}
+#UAC::after {
+}
+#vaction-planner {
+}
+#employee-manager {
+}
+
+#note-taker {
+}
+.squares {
+  max-width: 300px;
+}
 .project1 {
   color: white;
   z-index: 1000;
   height: 300px;
   width: 300px;
   margin: 20px;
-  background-color: red;
+  text-align: center;
 }
 #project-header {
   position: absolute;
