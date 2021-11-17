@@ -50,12 +50,38 @@
       </div>
     </div>
     <header>
+        <button class = "mobile-nav-toggle"  aria-controls = "primary-navigation" aria-expanded="false"><span class = "sr-only"></span></button>
+        <nav>
+            <ul id = "primary-navigation" data-visible = "false" class = "primary-navigation flex">
+              <li class="active">
+                <a href="./index.html">
+                  <span aria-hidden="true">Home</span>
+                </a> 
+              <li class="active">
+                <a href="./portfolio.html">
+                    <span aria-hidden="true">Portfolio</span>
+                </a>
+              <li class="active">
+                <a href="http://www.github.com/mariachiMES" target ="_blank">
+                    <span aria-hidden="true">GitHub</span>
+                </a>
+              <li class="active">
+                <a href="https://www.linkedin.com/in/david-ortiz-ba268911b/" target = "_blank">
+                    <span aria-hidden="true">LinkedIn</span>
+                </a>
+              <li class="active">
+                  <a href = "#">
+                    <span aria-hidden="true">Contact</span>
+                </a>
+              </ul>
+          </nav>
+        <!-- <a href="https://www.facebook.com/studiocomal" target = "_blank" class="logo"><img id = "comal" src = "public/images/Logo.png"></a>
       <ul>
         <li>Home</li>
         <li>Github</li>
         <li>Portfolio</li>
         <li>Contact</li>
-      </ul>
+      </ul> -->
     </header>
     <section>
       <img
@@ -72,10 +98,26 @@
       />
     </section>
     <div class="content">
-        <div class="sec" id="sec">
-          <h2>David Ortiz</h2>
-          <p>A bunch of stuff about David Ortiz that no one probably cares to know but here it anyway for people to read.</p>
-        </div class="sec">
+        <div class="sec">
+          <h2>about.Me() {</h2>
+          <p>My name is David Ortiz. I have made my living in case management for over 10 years
+               in various facets of the industry; homelessness, veterans affairs, patient advocacy, 
+               immigration and mental health. <br><br>
+               My great passion in life has been my music; my most 
+               recent endeavors being Mariachi Entertainmen System and Studio Comal, creative outlets 
+               for my musicianship and editing skills. I have recently taken on the task of learning 
+               front-end development with the hopes of building a career that will bring me personal 
+               satisfaction a sense of stabiliy. My first opportunity to work in the games industry 
+               came when I received a commission from Riot Games to create a mariachi version of an 
+               existing League of Legends song "The Curse of The Sad Mummy". I was able to continue 
+               my work in the games industry by working on original music for DrinkBox Studios' 
+               Guacamelee! 2 as well as working on mariachi covers of existing music from the franchise
+                also featured in-game. 
+                <br><br>My most recent work on games is on an independent steam game
+                 called "Town of Zoz", and action-adventure RPG about a boy and his connection to his
+                  indigenous culture through food.</p>
+                  <h2>}</h2>
+        </div>
         <script type="text/javascript">
           let studio = document.getElementById('studio');
           let davidEl = document.getElementById('david');
@@ -92,6 +134,8 @@
             text.style.marginRight = value * 2 + 'px';
             studio.style.height = 90+(value*.2) + "%";
           });
+          
         </script>
+        <script src = "./public/js/nav.js"></script>
   </body>
 </html>
