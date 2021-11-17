@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Ortiz. Web Developer</title>
+    <link rel="stylesheet" href="./public/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only"></span>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation flex"
+        >
+          <li class="active">
+            <a href="./index.html">
+              <span aria-hidden="true">Home</span>
+            </a>
+          </li>
+
+          <li class="active">
+            <a href="./portfolio.html">
+              <span aria-hidden="true">Portfolio</span>
+            </a>
+          </li>
+
+          <li class="active">
+            <a href="http://www.github.com/mariachiMES" target="_blank">
+              <span aria-hidden="true">GitHub</span>
+            </a>
+          </li>
+
+          <li class="active">
+            <a
+              href="https://www.linkedin.com/in/david-ortiz-ba268911b/"
+              target="_blank"
+            >
+              <span aria-hidden="true">LinkedIn</span>
+            </a>
+          </li>
+
+          <li class="active">
+            <a href="#">
+              <span aria-hidden="true">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <a href="https://www.facebook.com/studiocomal" target = "_blank" class="logo"><img id = "comal" src = "public/images/Logo.png"></a>
+      <ul>
+        <li>Home</li>
+        <li>Github</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+      </ul> -->
+    </header>
+    <section>
+      <img src="./public/images/davidPensive.JPG" />
+    </section>
+    <div class = "contact-form">
+        <form method="POST" action="https://formsubmit.co/davidjortizmusic@gmail.com" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="name"> Name:</label>
+            <input
+            class="contact-input"
+            id="name"
+            placeholder="Enter Your Name Here"
+            />
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input
+            class="contact-input"
+            id="email"
+            placeholder="Enter Your Email Here"
+            name="email"
+            />
+        </div>
+        <div class="form-group">
+            <label for="subject"> Subject:</label>
+            <input
+            class="contact-input"
+            id="subject"
+            placeholder="Enter Subject Heading"
+            name="subject"
+            />
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea
+            class="contact-message"
+            id="contact-area"
+            placeholder="Enter Your Message Here"
+            name="message"
+            ></textarea>
+        </div>
+        <button type ="submit" class="submit-button" id="send-message-button">Send Message</button>
+        <input type="hidden" name="_next" value="./thanks.html">
+
+        </div>
+    </form>
+    </div>
+<footer>© copyright david ortiz 2021</footer>
+
+    <script src="./public/js/nav.js"></script>
+  </body>
+</html>
