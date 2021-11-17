@@ -2,6 +2,35 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   box-sizing: border-box;
 }
+.project1 {
+  color: white;
+  z-index: 1000;
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  background-color: red;
+}
+#project-header {
+  position: absolute;
+  color: #fff;
+  text-shadow: 3px 3px 3px black;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  transform: translateY(0px);
+  text-shadow: rgba(4px, 4px, 4px, 0.7);
+}
+#project-header::after {
+  color: gold;
+  content: "( )";
+}
+.projects {
+  top: 0;
+  height: auto;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 a {
   text-decoration: none;
   color: white;
