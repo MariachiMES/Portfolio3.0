@@ -2,6 +2,7 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   box-sizing: border-box;
 }
+
 #UAC {
 }
 #UAC::before {
@@ -12,9 +13,28 @@
 }
 #employee-manager {
 }
+#experience:hover {
+  color: rgb(255, 68, 99);
+  transition: 0.3s ease-in-out;
+}
+
 a:hover {
   color: gold;
   transition: 0.5s ease-in-out;
+}
+#dad {
+  color: rgb(91, 236, 255);
+}
+#dad::before {
+  color: gold;
+  content: "(";
+}
+#dad::after {
+  color: gold;
+  content: ")";
+}
+#text::after {
+  content: ";";
 }
 .squares:hover {
   filter: saturate(5);
