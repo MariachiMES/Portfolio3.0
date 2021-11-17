@@ -2,6 +2,35 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
+#experience {
+  color: rgb(91, 236, 255);
+}
+#experience::after {
+  color: gold;
+  content: ")";
+}
+#experience::before {
+  color: gold;
+  content: "(";
+}
+#about-me::after {
+  color: skyblue;
+  content: "}";
+  font-size: 2em;
+}
+#about-me::before {
+  color: skyblue;
+  content: "{";
+  font-size: 2em;
+}
+#about-me-h2::after {
+  color: gold;
+  content: "( )";
+}
 .mobile-nav-toggle {
   visibility: hidden;
 }
@@ -22,7 +51,51 @@
   padding: 0;
   margin: 0;
 }
+@media (min-width: 562px), (max-width: 978px) {
+  section {
+    width: 100%;
+  }
+
+  #studio {
+    display: flex;
+  }
+  #david {
+    display: flex;
+    transform: scale(auto) translateX(auto) translateY(auto);
+  }
+  #microphone {
+    transform: scale(auto) translateX(auto) translateY(auto);
+  }
+}
 @media (max-width: 35em) {
+  #experience {
+    color: rgb(91, 236, 255);
+  }
+  #experience::after {
+    color: gold;
+    content: ")";
+  }
+  #experience::before {
+    color: gold;
+    content: "(";
+  }
+  #about-me::after {
+    color: skyblue;
+    content: "}";
+    font-size: 2em;
+  }
+  #about-me::before {
+    color: skyblue;
+    content: "{";
+    font-size: 2em;
+  }
+  #about-me-h2::after {
+    color: gold;
+    content: "( )";
+  }
+  img {
+    max-width: 100%;
+  }
   .primary-navigation {
     position: fixed;
     inset: 0 0 0 30%;
@@ -34,6 +107,7 @@
     z-index: 1000;
     transform: translateX(100%);
     transition: transform 350ms ease-out;
+    border-left: rgb(60, 255, 0) 5px solid;
   }
   .primary-navigation[data-visible="true"] {
     transform: translateX(0%);
@@ -61,17 +135,20 @@
     background: black;
   }
   .sec h2 {
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-size: 2em;
     color: #fff;
   }
   .sec p {
     font-size: 1.2em;
     color: #fff;
   }
-  .content {
-    padding: 0;
-    margin: 0;
+  #studio {
+  }
+  #david {
+    transform: scale(auto) translateX(auto) translateY(auto);
+  }
+  #microphone {
+    transform: scale(auto) translateX(auto) translateY(auto);
   }
 }
 @supports (
@@ -102,6 +179,7 @@ ul {
   float: right;
   font-weight: bolder;
   padding: 20px;
+  text-shadow: 3px 3px 3px black;
 }
 
 #comal {
@@ -254,7 +332,8 @@ section img#microphone {
 h2#text {
   position: absolute;
   color: #fff;
-  right: -600px;
+  right: -900px;
+  text-shadow: 3px 3px 3px black;
   white-space: nowrap;
   font-size: 7.5vw;
   transform: translateY(0px);
@@ -272,12 +351,12 @@ h2#text {
 }
 .sec {
   position: relative;
-  min-height: 500px;
-  padding: 100px;
+  min-height: 700px;
+  padding: 50px;
   background: black;
 }
 .sec h2 {
-  font-size: 3.5em;
+  font-size: 2em;
   margin-bottom: 10px;
   color: #fff;
 }
@@ -293,7 +372,13 @@ h2#text {
   width: 100%;
   height: auto;
 }
-
+footer {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
 .project-card {
   height: 400px;
   width: 250px;
